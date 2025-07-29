@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Gateway | Advanced Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    
+    <div class="neural-interface">
+        <div class="neural-nodes">
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+        </div>
+    </div>
+
+    <div class="hud-elements">
+        <div class="hud-top-left">System: ACTIVE</div>
+        <div class="hud-top-right">Security: ENABLED</div>
+        <div class="hud-bottom-left">Neural Link: READY</div>
+        <div class="hud-bottom-right">Gateway: ONLINE</div>
+    </div>
+    
+    <div class="login-container">
+        <div class="login-card">
+            <div class="card-header">
+                <div class="hologram">
+                    <div class="hologram-ring"></div>
+                    <div class="hologram-ring"></div>
+                    <div class="hologram-ring"></div>
+                </div>
+                <h2>Neural Gateway</h2>
+                <div class="biometric-scan">
+                    <div class="scan-line"></div>
+                </div>
+            </div>
+
+            <div class="system-status">
+                <div class="status-line">
+                    <span class="status-label">System Status:</span>
+                    <span class="status-value">Initializing...</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <label for="email">Neural ID</label>
+                        <input type="email" id="email" required autocomplete="off">
+                        <div class="input-line"></div>
+                        <div class="input-validation">
+                            <svg class="checkmark" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <div class="input-icon">
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <label for="password">Neural Key</label>
+                        <input type="password" id="password" required>
+                        <div class="input-line"></div>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="biometric-auth">
+                    <div class="fingerprint">
+                        <div class="scan-area"></div>
+                        <div class="scan-line"></div>
+                    </div>
+                    <span>Biometric Authentication Ready</span>
+                </div>
+
+                <button type="submit">
+                    <div class="button-content">
+                        <span class="button-text">Initialize Neural Link</span>
+                        <div class="button-loader">
+                            <div class="loader-segment"></div>
+                            <div class="loader-segment"></div>
+                            <div class="loader-segment"></div>
+                        </div>
+                    </div>
+                    <div class="button-glow"></div>
+                </button>
+            </form>
+
+            <div class="neural-feedback">
+                <div class="wave-visualizer">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+                <div class="status-text">Neural Interface Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="environment-data">
+        <div class="data-container">
+            <div class="data-item">
+                <span class="data-label">Neural Load:</span>
+                <span class="data-value">0%</span>
+            </div>
+            <div class="data-item">
+                <span class="data-label">Connection:</span>
+                <span class="data-value">Secure</span>
+            </div>
+            <div class="data-item">
+                <span class="data-label">Gateway:</span>
+                <span class="data-value">Active</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+                "three/examples/jsm/postprocessing/EffectComposer.js": "https://unpkg.com/three@0.154.0/examples/jsm/postprocessing/EffectComposer.js",
+                "three/examples/jsm/postprocessing/RenderPass.js": "https://unpkg.com/three@0.154.0/examples/jsm/postprocessing/RenderPass.js",
+                "three/examples/jsm/postprocessing/UnrealBloomPass.js": "https://unpkg.com/three@0.154.0/examples/jsm/postprocessing/UnrealBloomPass.js",
+                "gsap": "https://unpkg.com/gsap@3.12.0/index.js"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
